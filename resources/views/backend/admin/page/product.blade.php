@@ -29,7 +29,7 @@
                     <div class="card-body">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <a href="ecommerce-product-create.html" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle me-1"></i> Add Products</a>
+                                <a href="{{route('product.create')}}" class="btn btn-danger mb-2"><i class="mdi mdi-plus-circle me-1"></i> Add Products</a>
                             </div>
                             <div class="col-sm-6">
                                 <div class="float-sm-end">

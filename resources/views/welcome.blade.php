@@ -28,6 +28,7 @@
                     @auth
                         <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
                     @else
+                    <a href="{{route('product.index')}}" class="text-sm text-gray-700 underline">Dashboard</a>
                         <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
 
                         @if (Route::has('register'))
@@ -36,11 +37,7 @@
                     @endauth
                 </div>
             @endif
-            @guest
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                <a href="{{route('product.index')}}" class="text-sm text-gray-700 underline">Dashboard</a>
-            </div>
-            @endguest
+
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
